@@ -339,7 +339,7 @@ textarea {
     margin-bottom: 0.4rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   section,
   header {
     padding: 2rem;
