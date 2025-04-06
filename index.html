@@ -1,88 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div><h3>adamkeyes</h3></div>
+      <nav>
+        <ul>
+          <li><img src="images/icon-github.svg" alt="gitH" /></li>
+          <li><img src="images/icon-frontend-mentor.svg" alt="ment" /></li>
+          <li><img src="images/icon-linkedin.svg" alt="" /></li>
+          <li><img src="images/icon-twitter.svg" alt="" /></li>
+        </ul>
+      </nav>
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
-</head>
-<body>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="./images/pattern-rings.svg" alt="" />
+        <div class="hero-title">
+          <h1>
+            Nice to meet you!<br />
+            I'm <span> Adam Keyes.</span>
+          </h1>
+          <h4>
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </h4>
+          <a href="#">Contact me</a>
+        </div>
+      </div>
+      <img class="circle" src="/images/pattern-circle.svg" alt="" />
+      <div class="hero-img">
+        <img src="/images/image-profile-desktop.webp" alt="" />
+      </div>
+    </section>
 
-  adamkeyes
+    <section class="skills">
+      <img src="./images/pattern-rings.svg" alt="" />
+      <div class="skills-content">
+        <div>
+          <h2>HTML</h2>
+          <h4>4 Years Experience</h4>
+        </div>
+        <div>
+          <h2>CSS</h2>
+          <h4>4 Years Experience</h4>
+        </div>
+        <div>
+          <h2>JavaScript</h2>
+          <h4>4 Years Experience</h4>
+        </div>
+        <div>
+          <h2>Accessibility</h2>
+          <h4>4 Years Experience</h4>
+        </div>
+        <div>
+          <h2>React</h2>
+          <h4>3 Years Experience</h4>
+        </div>
+        <div>
+          <h2>Sass</h2>
+          <h4></h4>
+          3 Years Experience
+        </div>
+      </div>
+    </section>
 
-  Nice to meet you! I'm Adam Keyes.
+    <section class="projects">
+      <div class="proj-header">
+        <h1>Projects</h1>
+        <a href="#">Contact me</a>
+      </div>
+      <div class="grid">
+        <div class="grid-container">
+          <div class="grid-img">
+            <img src="images/thumbnail-project-1-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>Design portfolio</h3>
+            <h4>HTML CSS</h4>
+          </div>
+        </div>
+        <div>
+          <div class="grid-img">
+            <img src="images/thumbnail-project-2-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>E-learning landing page</h3>
+            <h4>HTML CSS</h4>
+          </div>
+        </div>
+        <div>
+          <div class="grid-img">
+            <img src="images/thumbnail-project-3-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>Todo web app</h3>
+            <h4>HTML CSS JavaScript</h4>
+          </div>
+        </div>
+        <div>
+          <div class="grid-img">
+            <img src="images/thumbnail-project-4-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>Design portfolio</h3>
+            <h4>HTML CSS</h4>
+          </div>
+        </div>
+        <div>
+          <div class="grid-img">
+            <img src="images/thumbnail-project-5-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>Memory Game</h3>
+            <h4>HTML CSS JavaScript</h4>
+          </div>
+        </div>
+        <div>
+          <div class="grid-img">
+            <img src="images/thumbnail-project-6-large.webp" alt="" />
+            <div class="grid-link">
+              <a href="#"> View project</a>
+              <a href="#">View code</a>
+            </div>
+          </div>
+          <div class="grid-content">
+            <h3>Art gallery showcase</h3>
+            <h4>HTML CSS JavaScript</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <img src="/images/pattern-rings.svg" alt="" />
+        <div class="contact-title">
+          <h1>Contact</h1>
+          <h4>
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </h4>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="input-form">
+              <input type="text" id="name" class="input" placeholder="name" />
+              <span
+                id="nameEror"
+                style="color: red; text-transform: uppercase"
+              ></span>
+            </div>
+            <div class="input-form">
+              <input
+                type="email"
+                id="email"
+                class="input"
+                placeholder="email"
+              />
+              <span
+                id="emailError"
+                style="color: red; text-transform: uppercase"
+              ></span>
+            </div>
+            <div class="input-form">
+              <textarea
+                id="message"
+                class="input"
+                placeholder="message"
+              ></textarea>
+              <span
+                id="messageError"
+                style="color: red; text-transform: uppercase"
+              ></span>
+            </div>
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
 
-  Contact me
+      <div class="footer header">
+        <div><h3>adamkeyes</h3></div>
+        <nav>
+          <ul>
+            <li><img src="images/icon-github.svg" alt="gitH" /></li>
+            <li><img src="images/icon-frontend-mentor.svg" alt="ment" /></li>
+            <li><img src="images/icon-linkedin.svg" alt="" /></li>
+            <li><img src="images/icon-twitter.svg" alt="" /></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
-  HTML
-  4 Years Experience
-
-  CSS
-  4 Years Experience
-
-  JavaScript
-  4 Years Experience
-
-  Accessibility
-  4 Years Experience
-
-  React
-  3 Years Experience
-
-  Sass
-  3 Years Experience
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
-
-</body>
+    <script src="js.js"></script>
+  </body>
 </html>
