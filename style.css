@@ -75,6 +75,9 @@ button {
   padding-top: 4rem;
   margin-bottom: 12rem;
 }
+.toggle {
+  display: none;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -161,7 +164,7 @@ nav ul li {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: repeat(3, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
   row-gap: 6.9rem;
   column-gap: 3rem;
   padding-bottom: 13.9rem;
@@ -258,12 +261,12 @@ textarea {
   margin: 4.7rem 3rem;
   border-top: 1px solid var(--color-white);
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .hero {
     padding: 0 5rem;
   }
-}
-@media (max-width: 768px) {
+} */
+@media (min-width: 501px) and (max-width: 1024px) {
   section,
   header {
     padding: 0 3rem;
@@ -289,6 +292,7 @@ textarea {
     right: 0;
     width: 32rem;
     height: 60rem;
+    margin-top: -10%;
   }
   .hero-img img {
     width: 100%;
@@ -314,8 +318,12 @@ textarea {
     padding-bottom: 10rem;
   }
   .grid-img {
-    width: 34rem;
+    width: 32rem;
     height: 25rem;
+  }
+  .grid-img img {
+    width: 100%;
+    height: 100%;
   }
   /* footer */
   footer {
@@ -339,25 +347,37 @@ textarea {
     margin-bottom: 0.4rem;
   }
 }
-@media (max-width: 540px) {
-  section,
-  header {
+@media (max-width: 500px) {
+  section {
     padding: 2rem;
   }
   /* header */
   .header {
-    justify-content: center;
     padding-top: 2rem;
     margin-bottom: 0rem;
+    justify-content: center;
+  }
+  .nav-bar {
+    display: block;
+    z-index: 99;
+  }
+  .active {
+    display: block;
   }
   nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    /* transition: top 0.3s ease-in-out; */
+    backdrop-filter: blur(3rem);
+    padding: 2rem;
     display: none;
   }
   nav ul li {
-    margin: 0 15px;
+    margin: 15px 0;
   }
   /* hero */
   .hero {
@@ -400,14 +420,15 @@ textarea {
   .hero-title h4 {
     font-size: 16px;
     line-height: 22px;
-    max-width: 100%;
+    /* max-width: 100%; */
     color: var(--color-grey);
   }
   .hero-img {
     position: static;
     margin: 1rem auto 0rem;
     width: 174px;
-    height: 24rem;
+    height: 38rem;
+    margin-top: -30%;
   }
   .hero-img img {
     width: 100%;
@@ -453,7 +474,6 @@ textarea {
   .grid-img {
     width: 100%;
   }
-
   /* footer */
   footer {
     padding: 3rem 1rem 0.1rem;

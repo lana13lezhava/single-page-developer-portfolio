@@ -14,7 +14,9 @@
   </head>
   <body>
     <header class="header">
-      <div><h3>adamkeyes</h3></div>
+      <div class="logo">
+        <div><h3>adamkeyes</h3></div>
+      </div>
       <nav>
         <ul>
           <li><img src="images/icon-github.svg" alt="gitH" /></li>
@@ -23,6 +25,7 @@
           <li><img src="images/icon-twitter.svg" alt="" /></li>
         </ul>
       </nav>
+      <div class="toggle"><img src="./images/sort.png" alt="" /></div>
     </header>
 
     <section class="hero">
@@ -41,9 +44,17 @@
         </div>
       </div>
       <img class="circle" src="./images/pattern-circle.svg" alt="" />
-      <div class="hero-img">
-        <img src="./images/image-profile-desktop.webp" alt="" />
-      </div>
+      <picture class="hero-img">
+        <source
+          media="(min-width: 500px )"
+          srcset="./images/image-profile-tablet.webp"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="./images/image-profile-desktop.webp"
+        />
+        <img src="./images/image-profile-mobile.webp" alt="" />
+      </picture>
     </section>
 
     <section class="skills">

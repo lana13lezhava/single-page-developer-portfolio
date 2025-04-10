@@ -43,3 +43,9 @@ form.addEventListener('submit', (e) => {
         messageEl.style.borderBottom = '2px solid green';
     }
 });
+// navBar
+const toggle = document.querySelector('.toggle')
+const navLinks = document.querySelector('nav ul')
+toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
